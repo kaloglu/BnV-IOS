@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		1B424EB724E3C2B000248DEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EB524E3C2B000248DEA /* Main.storyboard */; };
 		1B424EB924E3C2B100248DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EB824E3C2B100248DEA /* Assets.xcassets */; };
 		1B424EBC24E3C2B100248DEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EBA24E3C2B100248DEA /* LaunchScreen.storyboard */; };
+		1B424EC424E3D28500248DEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EC324E3D28500248DEA /* GoogleService-Info.plist */; };
 		E8E5FF9FA352118F13841523 /* Pods_BnV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42DD0BB1104C47C41AFBF32 /* Pods_BnV.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1B424EB824E3C2B100248DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B424EBB24E3C2B100248DEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B424EBD24E3C2B100248DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B424EC324E3D28500248DEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2B238F8183C24D0236C57286 /* Pods-BnV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BnV.release.xcconfig"; path = "Target Support Files/Pods-BnV/Pods-BnV.release.xcconfig"; sourceTree = "<group>"; };
 		30CE1D7562A5BA991EF753E5 /* Pods-BnV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BnV.debug.xcconfig"; path = "Target Support Files/Pods-BnV/Pods-BnV.debug.xcconfig"; sourceTree = "<group>"; };
 		F42DD0BB1104C47C41AFBF32 /* Pods_BnV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BnV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +47,7 @@
 		1B424EA324E3C2B000248DEA = {
 			isa = PBXGroup;
 			children = (
+				1B424EC324E3D28500248DEA /* GoogleService-Info.plist */,
 				1B424EAE24E3C2B000248DEA /* BnV */,
 				1B424EAD24E3C2B000248DEA /* Products */,
 				98570EAE364F60DED79F846A /* Pods */,
@@ -80,7 +83,6 @@
 				30CE1D7562A5BA991EF753E5 /* Pods-BnV.debug.xcconfig */,
 				2B238F8183C24D0236C57286 /* Pods-BnV.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +106,7 @@
 				1B424EA924E3C2B000248DEA /* Frameworks */,
 				1B424EAA24E3C2B000248DEA /* Resources */,
 				5DC872405F8EA1160380DA5B /* [CP] Embed Pods Frameworks */,
+				27F0C76BC6B99506A9EE1114 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B424EBC24E3C2B100248DEA /* LaunchScreen.storyboard in Resources */,
+				1B424EC424E3D28500248DEA /* GoogleService-Info.plist in Resources */,
 				1B424EB924E3C2B100248DEA /* Assets.xcassets in Resources */,
 				1B424EB724E3C2B000248DEA /* Main.storyboard in Resources */,
 			);
@@ -161,6 +165,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		27F0C76BC6B99506A9EE1114 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BnV/Pods-BnV-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BnV/Pods-BnV-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BnV/Pods-BnV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5DC872405F8EA1160380DA5B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.io.BnV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaloglu.bnv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.io.BnV;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kaloglu.bnv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

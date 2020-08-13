@@ -7,5 +7,6 @@ target 'BnV' do
 
   # Pods for BnV
   pod 'Firebase/Auth'
+  pod 'FirebaseUI/Google'
 
 end
