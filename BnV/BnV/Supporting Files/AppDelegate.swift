@@ -8,30 +8,15 @@
 
 import UIKit
 
-import FirebaseCore
-import FirebaseAuth
-import FirebaseUI
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var authUI: FUIAuth!
+    var authManager: AuthManager!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application
-        FirebaseApp.configure()
-//        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-//        GIDSignIn.sharedInstance().delegate = self
-        
-        authUI = FUIAuth.defaultAuthUI()
-        // You need to adopt a FUIAuthDelegate protocol to receive callback
-        authUI.delegate = self
-        let providers: [FUIAuthProvider] = [
-          FUIGoogleAuth(),
-//          FUIFacebookAuth(),
-//          FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()!),
-        ]
-        authUI.providers = providers
-        
+        authManager = AuthManager()
+        authManager.initialize()
         return true
     }
 
@@ -50,8 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
-        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+        if authManager.canHandle(url, options) {
           return true
         }
         // other URL handling goes here.
@@ -77,6 +61,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        print("Disconnected...")
 //    }
 //}
-extension AppDelegate: FUIAuthDelegate {
-    
-}

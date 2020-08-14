@@ -7,12 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuth
-import GoogleSignIn
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
-    var handle: AuthStateDidChangeListenerHandle!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,19 +28,11 @@ class ViewController: UIViewController {
        
     }
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-                handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            print(user)
-        }
-    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let authUI = (UIApplication.shared.delegate as! AppDelegate).authUI
-        let vc = authUI?.authViewController()
-        self.present(vc!, animated: false)
+        let vc = authUI.authViewController()
+        self.present(vc, animated: true)
     }
 }
 
