@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FirebaseCore
 import FirebaseAuth
 import FirebaseUI
 
@@ -16,7 +15,6 @@ class AuthManager: NSObject {
     var authUI: FUIAuth!
         
     func initialize() {
-        FirebaseApp.configure()
         authUI = FUIAuth.defaultAuthUI()
         authUI.delegate = self
         let providers: [FUIAuthProvider] = [

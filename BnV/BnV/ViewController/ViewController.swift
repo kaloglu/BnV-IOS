@@ -25,7 +25,17 @@ class ViewController: BaseViewController {
 //        googleSignIn.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
 //        googleSignIn.heightAnchor.constraint(equalToConstant: 44).isActive = true
         
-       
+        var raf = Raffle()
+        raf.id = "kdadadla"
+        raf.asDictionary
+        
+        RaffleStorage().list { raffles in
+            print(raffles)
+        }
+        
+        UserStorage().list { raffles in
+                   print(raffles)
+        }
     }
 
     

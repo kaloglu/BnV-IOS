@@ -17,6 +17,14 @@
 		1B424EC624E5741600248DEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B424EC524E5741600248DEA /* GoogleService-Info.plist */; };
 		1B424ECB24E677A400248DEA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ECA24E677A400248DEA /* AuthManager.swift */; };
 		1B424ECD24E67B4D00248DEA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ECC24E67B4D00248DEA /* BaseViewController.swift */; };
+		1B424ECF24E7FDA300248DEA /* Firestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ECE24E7FDA300248DEA /* Firestore.swift */; };
+		1B424ED224E940B700248DEA /* RaffleStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ED124E940B700248DEA /* RaffleStorage.swift */; };
+		1B424ED824E9436800248DEA /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ED724E9436800248DEA /* Encodable.swift */; };
+		1B424EDA24E943E600248DEA /* Raffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424ED924E943E600248DEA /* Raffle.swift */; };
+		1B424EDD24E95E4D00248DEA /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424EDC24E95E4D00248DEA /* TokenStorage.swift */; };
+		1B424EDF24E95E6700248DEA /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424EDE24E95E6700248DEA /* UserStorage.swift */; };
+		1B424EE124E962EB00248DEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424EE024E962EB00248DEA /* User.swift */; };
+		1B424EE324E96E5900248DEA /* Listable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B424EE224E96E5900248DEA /* Listable.swift */; };
 		E8E5FF9FA352118F13841523 /* Pods_BnV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42DD0BB1104C47C41AFBF32 /* Pods_BnV.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +40,14 @@
 		1B424EC524E5741600248DEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1B424ECA24E677A400248DEA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		1B424ECC24E67B4D00248DEA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1B424ECE24E7FDA300248DEA /* Firestore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firestore.swift; sourceTree = "<group>"; };
+		1B424ED124E940B700248DEA /* RaffleStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaffleStorage.swift; sourceTree = "<group>"; };
+		1B424ED724E9436800248DEA /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		1B424ED924E943E600248DEA /* Raffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raffle.swift; sourceTree = "<group>"; };
+		1B424EDC24E95E4D00248DEA /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		1B424EDE24E95E6700248DEA /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		1B424EE024E962EB00248DEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1B424EE224E96E5900248DEA /* Listable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listable.swift; sourceTree = "<group>"; };
 		2B238F8183C24D0236C57286 /* Pods-BnV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BnV.release.xcconfig"; path = "Target Support Files/Pods-BnV/Pods-BnV.release.xcconfig"; sourceTree = "<group>"; };
 		30CE1D7562A5BA991EF753E5 /* Pods-BnV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BnV.debug.xcconfig"; path = "Target Support Files/Pods-BnV/Pods-BnV.debug.xcconfig"; sourceTree = "<group>"; };
 		F42DD0BB1104C47C41AFBF32 /* Pods_BnV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BnV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				1B424EC724E6774500248DEA /* Supporting Files */,
+				1B424ED624E9434C00248DEA /* Extension */,
+				1B424EDB24E958B600248DEA /* Utility */,
 				1B424EC824E6775F00248DEA /* Manager */,
+				1B424ED024E9409E00248DEA /* Storage */,
+				1B424ED324E940F000248DEA /* Model */,
 				1B424EC924E6777200248DEA /* ViewController */,
 				1B424EB524E3C2B000248DEA /* Main.storyboard */,
 				1B424EBD24E3C2B100248DEA /* Info.plist */,
@@ -95,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1B424ECA24E677A400248DEA /* AuthManager.swift */,
+				1B424ECE24E7FDA300248DEA /* Firestore.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -106,6 +127,41 @@
 				1B424EB324E3C2B000248DEA /* ViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1B424ED024E9409E00248DEA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				1B424ED124E940B700248DEA /* RaffleStorage.swift */,
+				1B424EDC24E95E4D00248DEA /* TokenStorage.swift */,
+				1B424EDE24E95E6700248DEA /* UserStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		1B424ED324E940F000248DEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B424ED924E943E600248DEA /* Raffle.swift */,
+				1B424EE024E962EB00248DEA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B424ED624E9434C00248DEA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B424ED724E9436800248DEA /* Encodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1B424EDB24E958B600248DEA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1B424EE224E96E5900248DEA /* Listable.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		98570EAE364F60DED79F846A /* Pods */ = {
@@ -260,11 +316,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B424ED224E940B700248DEA /* RaffleStorage.swift in Sources */,
 				1B424ECD24E67B4D00248DEA /* BaseViewController.swift in Sources */,
 				1B424EB424E3C2B000248DEA /* ViewController.swift in Sources */,
+				1B424EDF24E95E6700248DEA /* UserStorage.swift in Sources */,
 				1B424ECB24E677A400248DEA /* AuthManager.swift in Sources */,
 				1B424EB024E3C2B000248DEA /* AppDelegate.swift in Sources */,
 				1B424EB224E3C2B000248DEA /* SceneDelegate.swift in Sources */,
+				1B424EDA24E943E600248DEA /* Raffle.swift in Sources */,
+				1B424EE324E96E5900248DEA /* Listable.swift in Sources */,
+				1B424EE124E962EB00248DEA /* User.swift in Sources */,
+				1B424EDD24E95E4D00248DEA /* TokenStorage.swift in Sources */,
+				1B424ECF24E7FDA300248DEA /* Firestore.swift in Sources */,
+				1B424ED824E9436800248DEA /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
